@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+  font-size: 16px;
+  line-height: 24px;
+
+  --font-primary: 'Inconsolata', monospace;
+  --font-secondary: 'Space Mono', monospace;
+
+  --color-primary: #333333;
+  --color-secondary: #4F4F4F;
+  --color-text: #FFF;
+
+  --fontw-regular: 400;
+  --fontw-bold: 700;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: 1.25rem 1.5rem;
+  max-width: 80%;
+  position: relative;
+}
+
+.logo {
+  font-family: var(--font-primary);
+  font-weight: var(--fontw-bold);
+  font-size: 1.5rem;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+img {
+  margin-top: 4rem;
+  margin-bottom: 3.75rem;
+  width: 90%;
+  height: auto;
+}
+
+.hero-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  flex-wrap: wrap;
+  font-family: var(--font-secondary);
+  letter-spacing: -0.035em;
+}
+
+.hero-items h1 {
+  font-weight: var(--fontw-bold);
+  line-height: 4.438rem;
+  font-size: 3rem;
+  color: var(--color-primary);
+}
+
+.hero-items p {
+  font-size: 1.125rem;
+  line-height: 1.688rem;
+  color: var(--color-secondary);
+}
+
+.hero-items button {
+  font-family: inherit;
+  padding: 1.5rem 2.688rem;
+  border: none;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: var(--fontw-bold);
+  line-height: 1.313rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 1.5rem;
+  font-family: var(--font-primary);
+  letter-spacing: -0.035em;
+  line-height: 1rem;
+  color: #BDBDBD;
+  width: 100%;
+  text-align: center;
+}
+
+footer span {
+  color: blue;
+  background-color: yellow;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 75rem) {
+  body {
+    margin-left: 4.813rem;
+    margin-right: 7.438rem;
+    margin-top: 2.5rem;
+    max-width: 1440px;
+  }
+
+  .hero {
+    flex-direction: row;
+    gap: 7.5rem;
+  } 
+
+  img {
+    width: 33.75rem;
+    height: auto;
+  }
+
+  .hero-items {
+    align-items: flex-start;
+  }
+
+  .hero-items h1 {
+    font-size: 4rem;
+  }
+
+  .hero-items p {
+    max-width: 380px;
+  }
+}
