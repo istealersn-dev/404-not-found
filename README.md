@@ -36,7 +36,7 @@
 
 ## Overview
 
-![screenshot](blob:https://vercel.com/f90179da-fcc4-4465-92ef-6e9083061c21)
+![screenshot](https://www.awesomescreenshot.com/image/32176943?key=cfbdb36a08c12e02f3894116190ed903)
 
 - You can view my solution to the challenge by clicking on the 'Solution' link above
 - Overall experience was really good, helped me understand Vite.js
